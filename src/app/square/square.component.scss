@@ -1,0 +1,60 @@
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 5em !important;
+  font-family: "Sofia", sans-serif;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.x {
+  background-color: rgb(230, 230, 250);
+  color: indigo;
+  animation: small-to-big 250ms ease-in-out;
+}
+
+.o {
+  background-color: indigo;
+  color: rgb(230, 230, 250);
+  animation: small-to-big 100ms ease-in-out;
+}
+
+@keyframes small-to-big {
+  0% {
+    transform: scale(0) rotate(90deg);
+    -webkit-transform: scale(0) rotate(90deg);
+    color: white;
+    background-color: white;
+  }
+  50% {
+    transform: scale(1.5) rotate(180deg);
+    -webkit-transform: scale(1.5) rotate(180deg);
+  }
+  75% {
+    transform: scale(1.2) rotate(270deg);
+    -webkit-transform: scale(1.2) rotate(360deg);
+    color: white;
+    background-color: white;
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+    -webkit-transform: scale(1) rotate(360deg);
+  }
+}
+
+@media (max-width: 500px) {
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    font-size: 1.5em !important;
+    font-family: "Sofia", sans-serif;
+    background-color: white;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,13 @@
+.backgroung{
+    background-color: purple;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 500px){
+    .backgroung{
+        background-color: rgb(228, 143, 228);
+        width: 100vw;
+        height: 100vh;
+    }
+}

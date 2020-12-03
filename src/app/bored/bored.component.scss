@@ -1,0 +1,79 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-gap: 5px;
+  width: 610px;
+  background-color: rgb(224, 218, 218);
+  border-radius: 10%;
+  box-shadow: 0px 0px 50px 10px rgb(241, 132, 255);
+  margin-bottom: 100px;
+}
+
+button {
+  margin-bottom: 10px;
+  height: 35px;
+  border: none;
+  background-color: gray;
+  color: black; 
+}
+
+h1 {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+button:active {
+  color: white;
+  box-shadow: 2px 5px rgb(212, 211, 211);
+}
+
+app-square {
+  // border:1px gray solid;
+  height: 200px;
+}
+
+.centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    width: 250px;
+    height: 250px;
+    background-color: rgb(224, 126, 236);
+    border-radius: 10%;
+    margin-top: 100px;
+    box-shadow: 0px 0px 50px 10px rgb(247, 204, 253);
+  }
+
+  button {
+    margin-bottom: 10px;
+    height: 35px;
+    border: none;
+    background-color: rgb(224, 126, 236);
+    box-shadow: 0px 0px 50px 10px rgb(247, 204, 253);
+  }
+
+  button:active {
+    color: white;
+    box-shadow: 0px 0px 50px 10px rgb(247, 204, 253);
+  }
+
+  app-square {
+    // border:1px gray solid;
+    height: 80px;
+  }
+
+  .centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
